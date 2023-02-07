@@ -1,5 +1,5 @@
 FROM openjdk:8
-COPY . /src/java
-WORKDIR /src/java
+COPY . jenkins-docker-integration/src/java
+WORKDIR jenkins-docker-integration/src/java
 RUN [ "javac", "JavaExample.java" ]
 ENTRYPOINT [ "java", "JavaExample.java"]
