@@ -1,5 +1,5 @@
 FROM openjdk:8
-COPY . /var/lib/jenkins/workspace/Jenkins docker integration/
-WORKDIR /var/lib/jenkins/workspace/Jenkins docker integration/
+COPY  C:\ProgramData\Jenkins\.jenkins\workspace\Jenkins docker integration\src\java
+WORKDIR C:\ProgramData\Jenkins\.jenkins\workspace\Jenkins docker integration\src\java
 RUN [ "javac", "JavaExample.java" ]
 ENTRYPOINT [ "java", "JavaExample.java"]
