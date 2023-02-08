@@ -1,5 +1,6 @@
 FROM openjdk:8
-COPY . C:\ProgramData\Jenkins\.jenkins\workspace\Jenkins docker integration\
-WORKDIR C:\ProgramData\Jenkins\.jenkins\workspace\Jenkins docker integration\
-RUN [ "javac", "JavaExample.java" ]
-ENTRYPOINT [ "java", "JavaExample.java"]
+COPY . /home/indium/manisha/java
+WORKDIR /home/indium/manisha/java
+RUN javac JavaExample.java
+CMD ["java","JavaExample"]
+
